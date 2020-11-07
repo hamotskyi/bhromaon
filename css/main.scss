@@ -1,10 +1,12 @@
-/*
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Aleo', sans-serif;
-*/
+* {
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
 }
 
-@import "header"
+@import "header";
+@import "scroll";
+@import "choose";
+@import "how-it-works";
