@@ -1,1 +1,137 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Aleo', sans-serif;
+*/
+body {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1770px;
+  min-width: 1366px;
+  max-height: 820px;
+  min-height: 768px;
+  background-image: url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin: auto;
+}
+
+.header .title {
+  font-size: 48px;
+  font-family: "Josefin Sans";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+}
+
+.header .subtitle {
+  font-size: 22px;
+  font-family: "Josefin Sans";
+  color: white;
+  line-height: 1;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 39%;
+  margin: 0;
+}
+
+.header form {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 47%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid white;
+  background-color: white;
+  width: 36%;
+  height: 7%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 78% 22%;
+      grid-template-columns: 78% 22%;
+}
+
+.header form input {
+  border: none;
+  font-size: 24px;
+  font-family: "Josefin Sans";
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header form input::-webkit-input-placeholder {
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+}
+
+.header form input:-ms-input-placeholder {
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+}
+
+.header form input::-ms-input-placeholder {
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+}
+
+.header form input::placeholder {
+  text-align: center;
+  color: #999999;
+  font-size: 14px;
+}
+
+.header form button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 76% 24%;
+      grid-template-columns: 76% 24%;
+  background-color: #5474fd;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header form button div {
+  font-size: 14px;
+  font-family: "Aleo";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header form button svg {
+  margin-bottom: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.header form button svg path {
+  fill: white;
+}
+/*# sourceMappingURL=main.css.map */
