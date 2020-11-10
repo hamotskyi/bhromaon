@@ -22,7 +22,18 @@
             width: 60px;
             height: 60px;
             background-color: #333333;
-            border-radius: 30px
+            border-radius: 30px;
+            cursor: pointer;
+            transition: ease-in-out .4s;
+
+            &:hover {
+                transform: scale(1.4);
+            }
+
+            &:active {
+                transform: scale(1.2);
+                transition: ease-in-out .2s;
+            }
         }
 
         p {
@@ -31,7 +42,8 @@
             color: rgb(232, 232, 232);
             line-height: 1;
             text-align: center;
-            margin: 0;
+            margin: 0; 
+            cursor: default;
         }
     }
 
@@ -50,7 +62,18 @@
             width: 60px;
             height: 60px;
             background-color: #333333;
-            border-radius: 30px
+            border-radius: 30px;
+            cursor: pointer;
+            transition: ease-in-out .4s;
+
+            &:hover {
+                transform: scale(1.4);
+            }
+
+            &:active {
+                transform: scale(1.2);
+                transition: ease-in-out .2s;
+            }
         }
 
         p {
@@ -59,7 +82,8 @@
             color: rgb(232, 232, 232);
             line-height: 1;
             text-align: center;
-            margin: 0;
+            margin: 0; 
+            cursor: default;
         }
     }
 
@@ -78,7 +102,18 @@
             width: 60px;
             height: 60px;
             background-color: #333333;
-            border-radius: 30px
+            border-radius: 30px;
+            cursor: pointer;
+            transition: ease-in-out .4s;
+
+            &:hover {
+                transform: scale(1.4);
+            }
+
+            &:active {
+                transform: scale(1.2);
+                transition: ease-in-out .2s;
+            }
         }
 
         p {
@@ -87,7 +122,8 @@
             color: rgb(232, 232, 232);
             line-height: 1;
             text-align: center;
-            margin: 0;
+            margin: 0; 
+            cursor: default;
         }
     }
 
@@ -140,7 +176,8 @@
             text-align: center;
             color: rgb(255, 255, 255);
             align-self: flex-end; 
-            order: -1;       
+            order: -1; 
+            cursor: default;     
         }
     }
 }

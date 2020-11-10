@@ -24,7 +24,8 @@
         top: 33%;
         left: 50%;
         transform: translateX(-50%);
-        margin: 0;
+        margin: 0; 
+        cursor: default;
     }
 
     .subtitle {
@@ -37,7 +38,8 @@
         left: 50%;
         transform: translateX(-50%);
         top: 39%;
-        margin: 0;
+        margin: 0; 
+        cursor: default;
     }
 
     form {
@@ -72,7 +74,6 @@
             }
             
             &:focus {
-                outline: none;
                 background-color: #e6e6e6;
                 color: #041c30;
                 
@@ -101,13 +102,14 @@
             transition: ease-in-out .7s;
 
             &:focus {
-                outline: none;
                 background-color: darken(#5474fd, 20);
+                transform: scale(1.1);
             }
 
             &:hover {
                 background-color: darken(#5474fd, 20);
                 grid-template-columns: 1fr;
+                
 
                 div {
                     display: none;
@@ -137,13 +139,14 @@
 
 
             div {
+                padding-top: 2px;
                 font-size: 14px;
                 font-family: "Aleo";
                 color: rgb(255, 255, 255);
                 text-transform: uppercase;
                 text-align: center;
                 line-height: 1;
-                transition: ease-in-out 5s;
+                transition: ease-in-out 1s;
             }
 
             svg {
@@ -168,6 +171,7 @@
         z-index: 5;
 
         .logo {
+            box-sizing: border-box;
             margin: 0;
             font-size: 24px;
             font-family: "Josefin Sans";
@@ -176,10 +180,21 @@
             text-transform: uppercase;
             line-height: 1;
             position: absolute;
-            left: 19%;
+            left: 15%;
             top: 50%;
             transform: translateY(-50%);
             text-decoration: none;
+            transition: ease-in-out .4s;
+
+
+            &:focus,
+            &:hover {
+                transform: translateY(-50%) scale(1.2);
+            }
+
+            &:active {
+                transform: translateY(-50%) scale(1.1);
+            }
         }
 
         ul {
@@ -200,11 +215,23 @@
             justify-content: center;
             align-items: center;
 
+
+
             li {
                 margin: 0;
                 text-align: center;
+                transition: ease-in-out .4s;
 
 
+                &:focus-within,
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:active {
+                    transform: scale(1.1);
+                }
+    
                 a {
                     margin: 0;
                     text-decoration: none;
@@ -213,6 +240,7 @@
                     color: rgb(255, 255, 255);
                     text-transform: uppercase;
                     line-height: 1;
+                    padding-bottom: 3px;
                 }
             }
         }
@@ -220,7 +248,7 @@
 
     .scroll-down {
         position: sticky;
-        top: 85%;
+        top: 80%;
         left: 50%;
         transform: translateX(-50%);
         width: 10vw;
@@ -254,7 +282,8 @@
             text-align: center;
             color: rgb(255, 255, 255);
             align-self: flex-end; 
-            order: -1;       
+            order: -1; 
+            cursor: default;       
         }
     }
 }

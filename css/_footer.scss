@@ -21,7 +21,20 @@
         left: 50%;
         transform: translateX(-50%);
         text-decoration: none;
-        margin: 0;
+        margin: 0;                
+        transition: ease-in-out .3s;
+
+
+        &:focus,
+        &:hover {
+            
+            transform: translateX(-50%) scale(1.2);
+            color: #839aff;
+        }
+
+        &:active {
+            transform: translateX(-50%) scale(1.05);
+        }
 
       }
       
@@ -34,7 +47,8 @@
         top: 155px;
         left: 50%;
         transform: translateX(-50%);
-        margin: 0;
+        margin: 0; 
+        cursor: default;
     }
 
     ul {
@@ -58,9 +72,22 @@
             height: 16px;
             cursor: pointer;
 
+            &:focus-within,
             &:hover {
                 a {
                     svg {
+                        transform: scale(1.7);
+                        path {
+                            fill:#5474fd;
+                        }
+                    }
+                }
+            }
+
+            &:active {
+                a {
+                    svg {
+                        transform: scale(1.2);
                         path {
                             fill:#5474fd;
                         }
@@ -78,6 +105,7 @@
                     width: 16px;
                     height: 16px;
                     cursor: pointer;
+                    transition: ease-in-out .4s;
 
 
                     path {

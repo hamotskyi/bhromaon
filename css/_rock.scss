@@ -24,7 +24,8 @@
             font-family: "Josefin Sans";
             color: rgb(232, 232, 232);
             line-height: 1.3;
-            text-align: left;
+            text-align: left; 
+            cursor: default;
         }
 
         .subtitle {
@@ -34,7 +35,8 @@
             text-transform: uppercase;
             line-height: 1.3;
             text-align: left;
-            margin-bottom: 5%;
+            margin-bottom: 5%; 
+            cursor: default;
         }
 
         .text {
@@ -44,7 +46,8 @@
             line-height: 1.625;
             font-weight: 300;
             text-align: left;
-            margin-bottom: 10%;
+            margin-bottom: 10%; 
+            cursor: default;
         }
 
         a {
@@ -58,7 +61,20 @@
                 width: 225px;
                 height: 60px;
                 border: none;
-                cursor: pointer;
+                cursor: pointer;                
+                transition: ease-in-out .7s;
+
+
+                &:focus,
+                &:hover {
+                    transform: scale(1.15);
+                    background-color: darken(#5474fd, 20);
+                }
+
+                &:active {
+                    transform: scale(1.05);
+                    background-color: darken(#5474fd, 10);
+                }
             }
         }
     }
@@ -99,7 +115,8 @@
             text-align: center;
             color: rgb(255, 255, 255);
             align-self: flex-end; 
-            order: -1;       
+            order: -1; 
+            cursor: default;       
         }
     }
 }

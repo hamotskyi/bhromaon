@@ -20,7 +20,8 @@
             font-size: 36px;
             font-family: "Aleo";
             color: rgb(255, 255, 255);
-            line-height: 1;
+            line-height: 1; 
+            cursor: default;
         }
 
         .text {
@@ -29,7 +30,8 @@
             color: rgb(232, 232, 232);
             line-height: 1.625;
             font-weight: 300;
-            margin-bottom: 35px;
+            margin-bottom: 35px; 
+            cursor: default;
         }    
         
         a {
@@ -45,7 +47,20 @@
                 height: 60px;
                 border: none;
                 background-color: #5474fd;
-                cursor: pointer;
+                cursor: pointer;                
+                transition: ease-in-out .7s;
+
+
+                &:focus,
+                &:hover {
+                    transform: scale(1.15);
+                    background-color: darken(#5474fd, 20);
+                }
+
+                &:active {
+                    transform: scale(1.05);
+                    background-color: darken(#5474fd, 10);
+                }
             }
         }
     }
@@ -105,7 +120,8 @@
             text-align: center;
             color: rgb(255, 255, 255);
             align-self: flex-end; 
-            order: -1;       
+            order: -1; 
+            cursor: default;        
         }
     }
 }

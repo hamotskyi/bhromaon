@@ -1,6 +1,9 @@
-@charset "UTF-8";
 * {
   scroll-behavior: smooth;
+}
+
+*:focus, *:focus-within {
+  outline: none;
 }
 
 body {
@@ -36,6 +39,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin: 0;
+  cursor: default;
 }
 
 .header .subtitle {
@@ -50,6 +54,7 @@ body {
           transform: translateX(-50%);
   top: 39%;
   margin: 0;
+  cursor: default;
 }
 
 .header form {
@@ -88,7 +93,6 @@ body {
 }
 
 .header form input:focus {
-  outline: none;
   background-color: #e6e6e6;
   color: #041c30;
 }
@@ -152,8 +156,9 @@ body {
 }
 
 .header form button:focus {
-  outline: none;
   background-color: #032ee8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header form button:hover {
@@ -191,14 +196,15 @@ body {
 }
 
 .header form button div {
+  padding-top: 2px;
   font-size: 14px;
   font-family: "Aleo";
   color: white;
   text-transform: uppercase;
   text-align: center;
   line-height: 1;
-  -webkit-transition: ease-in-out 5s;
-  transition: ease-in-out 5s;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
 }
 
 .header form button svg {
@@ -223,6 +229,8 @@ body {
 }
 
 .header footer .logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   font-size: 24px;
   font-family: "Josefin Sans";
@@ -231,11 +239,23 @@ body {
   text-transform: uppercase;
   line-height: 1;
   position: absolute;
-  left: 19%;
+  left: 15%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   text-decoration: none;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+}
+
+.header footer .logo:focus, .header footer .logo:hover {
+  -webkit-transform: translateY(-50%) scale(1.2);
+          transform: translateY(-50%) scale(1.2);
+}
+
+.header footer .logo:active {
+  -webkit-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1);
 }
 
 .header footer ul {
@@ -268,6 +288,18 @@ body {
 .header footer ul li {
   margin: 0;
   text-align: center;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+}
+
+.header footer ul li:focus-within, .header footer ul li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header footer ul li:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header footer ul li a {
@@ -278,12 +310,13 @@ body {
   color: white;
   text-transform: uppercase;
   line-height: 1;
+  padding-bottom: 3px;
 }
 
 .header .scroll-down {
   position: -webkit-sticky;
   position: sticky;
-  top: 85%;
+  top: 80%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -328,6 +361,7 @@ body {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  cursor: default;
 }
 
 .scroll .scroll-up {
@@ -374,6 +408,7 @@ body {
   color: white;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  cursor: default;
 }
 
 .choose {
@@ -401,6 +436,7 @@ body {
   font-family: "Aleo";
   color: white;
   line-height: 1;
+  cursor: default;
 }
 
 .choose .text-wrapper .text {
@@ -410,6 +446,7 @@ body {
   line-height: 1.625;
   font-weight: 300;
   margin-bottom: 35px;
+  cursor: default;
 }
 
 .choose .text-wrapper a button {
@@ -424,6 +461,20 @@ body {
   border: none;
   background-color: #5474fd;
   cursor: pointer;
+  -webkit-transition: ease-in-out .7s;
+  transition: ease-in-out .7s;
+}
+
+.choose .text-wrapper a button:focus, .choose .text-wrapper a button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background-color: #032ee8;
+}
+
+.choose .text-wrapper a button:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #224bfc;
 }
 
 .choose .pic1 {
@@ -492,6 +543,7 @@ body {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  cursor: default;
 }
 
 .how-it-works {
@@ -526,6 +578,21 @@ body {
   height: 60px;
   background-color: #333333;
   border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+}
+
+.how-it-works .search-places svg:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.how-it-works .search-places svg:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
 }
 
 .how-it-works .search-places p {
@@ -535,6 +602,7 @@ body {
   line-height: 1;
   text-align: center;
   margin: 0;
+  cursor: default;
 }
 
 .how-it-works .select-places {
@@ -559,6 +627,21 @@ body {
   height: 60px;
   background-color: #333333;
   border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+}
+
+.how-it-works .select-places svg:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.how-it-works .select-places svg:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
 }
 
 .how-it-works .select-places p {
@@ -568,6 +651,7 @@ body {
   line-height: 1;
   text-align: center;
   margin: 0;
+  cursor: default;
 }
 
 .how-it-works .book-enjoy {
@@ -592,6 +676,21 @@ body {
   height: 60px;
   background-color: #333333;
   border-radius: 30px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+}
+
+.how-it-works .book-enjoy svg:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.how-it-works .book-enjoy svg:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
 }
 
 .how-it-works .book-enjoy p {
@@ -601,6 +700,7 @@ body {
   line-height: 1;
   text-align: center;
   margin: 0;
+  cursor: default;
 }
 
 .how-it-works .lines {
@@ -665,6 +765,7 @@ body {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  cursor: default;
 }
 
 .pool {
@@ -697,6 +798,7 @@ body {
   color: #e8e8e8;
   line-height: 1.3;
   text-align: left;
+  cursor: default;
 }
 
 .pool .wrapper .subtitle {
@@ -707,6 +809,7 @@ body {
   line-height: 1.3;
   text-align: left;
   margin-bottom: 5%;
+  cursor: default;
 }
 
 .pool .wrapper .text {
@@ -717,6 +820,7 @@ body {
   font-weight: 300;
   text-align: left;
   margin-bottom: 10%;
+  cursor: default;
 }
 
 .pool .wrapper a button {
@@ -730,6 +834,20 @@ body {
   height: 60px;
   border: none;
   cursor: pointer;
+  -webkit-transition: ease-in-out .7s;
+  transition: ease-in-out .7s;
+}
+
+.pool .wrapper a button:focus, .pool .wrapper a button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background-color: #032ee8;
+}
+
+.pool .wrapper a button:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #224bfc;
 }
 
 .pool .scroll-down {
@@ -780,6 +898,7 @@ body {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  cursor: default;
 }
 
 .rock {
@@ -812,6 +931,7 @@ body {
   color: #e8e8e8;
   line-height: 1.3;
   text-align: left;
+  cursor: default;
 }
 
 .rock .wrapper .subtitle {
@@ -822,6 +942,7 @@ body {
   line-height: 1.3;
   text-align: left;
   margin-bottom: 5%;
+  cursor: default;
 }
 
 .rock .wrapper .text {
@@ -832,6 +953,7 @@ body {
   font-weight: 300;
   text-align: left;
   margin-bottom: 10%;
+  cursor: default;
 }
 
 .rock .wrapper a button {
@@ -845,6 +967,20 @@ body {
   height: 60px;
   border: none;
   cursor: pointer;
+  -webkit-transition: ease-in-out .7s;
+  transition: ease-in-out .7s;
+}
+
+.rock .wrapper a button:focus, .rock .wrapper a button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background-color: #032ee8;
+}
+
+.rock .wrapper a button:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #224bfc;
 }
 
 .rock .scroll-down {
@@ -895,6 +1031,7 @@ body {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+  cursor: default;
 }
 
 .review {
@@ -921,6 +1058,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin: 0;
+  cursor: default;
 }
 
 .review .grid {
@@ -960,6 +1098,7 @@ body {
   text-align: left;
   font-weight: 300;
   margin-bottom: 5%;
+  cursor: default;
 }
 
 .review .grid .grid-text .text {
@@ -970,27 +1109,13 @@ body {
   line-height: 1.5;
   text-align: left;
   font-weight: 200;
+  cursor: default;
 }
 
 .review .grid .grid-text .text span svg {
   width: 20px;
   height: 18px;
   margin-bottom: 5px;
-}
-
-.__But_I_must_explain_to_you_how_all_this_mista {
-  font-size: 36px;
-  font-family: "FontAwesome";
-  color: #5474fd;
-  vertical-align: super;
-  line-height: 0.722;
-  text-align: left;
-  position: absolute;
-  left: 849.913px;
-  top: 3627.371px;
-  width: 551px;
-  height: 136px;
-  z-index: 22;
 }
 
 .footer {
@@ -1019,6 +1144,19 @@ body {
           transform: translateX(-50%);
   text-decoration: none;
   margin: 0;
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.footer .title:focus, .footer .title:hover {
+  -webkit-transform: translateX(-50%) scale(1.2);
+          transform: translateX(-50%) scale(1.2);
+  color: #839aff;
+}
+
+.footer .title:active {
+  -webkit-transform: translateX(-50%) scale(1.05);
+          transform: translateX(-50%) scale(1.05);
 }
 
 .footer .subtitle {
@@ -1032,6 +1170,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin: 0;
+  cursor: default;
 }
 
 .footer ul {
@@ -1062,7 +1201,21 @@ body {
   cursor: pointer;
 }
 
-.footer ul li:hover a svg path {
+.footer ul li:focus-within a svg, .footer ul li:hover a svg {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.footer ul li:focus-within a svg path, .footer ul li:hover a svg path {
+  fill: #5474fd;
+}
+
+.footer ul li:active a svg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.footer ul li:active a svg path {
   fill: #5474fd;
 }
 
@@ -1076,6 +1229,8 @@ body {
   width: 16px;
   height: 16px;
   cursor: pointer;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
 }
 
 .footer ul li a svg path {
