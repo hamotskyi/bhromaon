@@ -3324,12 +3324,12 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    max-width: 1770px;
-    min-width: 1200px;
-    max-height: 820px;
-    min-height: 768px;
+    max-width: 1199px;
+    min-width: 922px;
+    max-height: 768px;
+    min-height: 500px;
     background-image: url(../img/header-bg.png);
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     margin: auto;
     z-index: 3;
@@ -3360,22 +3360,22 @@ body {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 39%;
+    top: 42%;
     margin: 0;
     cursor: default;
   }
   .header form {
     position: absolute;
     left: 50%;
+    top: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 47%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 2px solid white;
     background-color: white;
-    width: 36%;
-    height: 7%;
+    width: 40%;
+    height: 9%;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 78% 22%;
@@ -3383,7 +3383,7 @@ body {
   }
   .header form input {
     border: none;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Josefin Sans";
     color: #041c30;
     -webkit-transition: ease-in-out .1s;
@@ -3414,30 +3414,30 @@ body {
   .header form input::-webkit-input-placeholder {
     text-align: center;
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
   }
   .header form input:-ms-input-placeholder {
     text-align: center;
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
   }
   .header form input::-ms-input-placeholder {
     text-align: center;
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
   }
   .header form input::placeholder {
     text-align: center;
     color: #999999;
-    font-size: 14px;
+    font-size: 12px;
   }
   .header form button {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 70% 20%;
-        grid-template-columns: 70% 20%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     background-color: #5474fd;
     border: none;
     justify-items: center;
@@ -3455,42 +3455,22 @@ body {
   }
   .header form button:hover {
     background-color: #032ee8;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .header form button:hover div {
-    display: none;
-    opacity: 0;
   }
   .header form button:hover svg {
-    -webkit-transform: scale(1.75);
-            transform: scale(1.75);
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
     margin: 0;
   }
   .header form button:active {
     background-color: #032ee8;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .header form button:active div {
-    display: none;
-    opacity: 0;
   }
   .header form button:active svg {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
     margin: 0;
   }
   .header form button div {
-    padding-top: 2px;
-    font-size: 14px;
-    font-family: "Aleo";
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    -webkit-transition: ease-in-out 1s;
-    transition: ease-in-out 1s;
+    display: none;
   }
   .header form button svg {
     margin-bottom: 3px;
@@ -3511,41 +3491,18 @@ body {
     z-index: 5;
   }
   .header footer .logo {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin: 0;
-    font-size: 24px;
-    font-family: "Josefin Sans";
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1;
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    text-decoration: none;
-    -webkit-transition: ease-in-out .4s;
-    transition: ease-in-out .4s;
-  }
-  .header footer .logo:focus, .header footer .logo:hover {
-    -webkit-transform: translateY(-50%) scale(1.2);
-            transform: translateY(-50%) scale(1.2);
-  }
-  .header footer .logo:active {
-    -webkit-transform: translateY(-50%) scale(1.1);
-            transform: translateY(-50%) scale(1.1);
+    display: none;
   }
   .header footer ul {
     position: absolute;
+    left: 50%;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 9%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    right: 10%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 42%;
+    width: 60%;
     max-width: 550px;
     height: 18px;
     list-style: none;
@@ -3580,7 +3537,7 @@ body {
   .header footer ul li a {
     margin: 0;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     font-family: "Aleo";
     color: white;
     text-transform: uppercase;
@@ -3588,18 +3545,19 @@ body {
     padding-bottom: 3px;
   }
   .header .scroll-down {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 80%;
+    position: absolute;
+    bottom: 15%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 10vw;
-    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    width: 5vw;
+    height: 5vh;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -3607,31 +3565,15 @@ body {
     z-index: 4;
   }
   .header .scroll-down div:nth-child(1) {
-    opacity: 0;
+    opacity: .25;
   }
   .header .scroll-down:hover > div:nth-child(1) {
     opacity: 1;
     -webkit-transition: ease-in-out 1s;
     transition: ease-in-out 1s;
   }
-  .header .scroll-down div:nth-child(1):hover + div:nth-child(2) {
-    opacity: .5;
-    -webkit-transition: ease-in-out 1s;
-    transition: ease-in-out 1s;
-  }
   .header .scroll-down div:nth-child(2) {
-    opacity: 0;
-    font-size: 14px;
-    font-family: "Josefin Sans";
-    line-height: 1;
-    text-align: center;
-    color: white;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-    cursor: default;
+    display: none;
   }
   .scroll .scroll-up {
     position: fixed;
@@ -4432,7 +4374,7 @@ body {
     max-height: 820px;
     min-height: 768px;
     background-image: url(../img/header-bg.png);
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     margin: auto;
     z-index: 3;
