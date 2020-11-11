@@ -9,6 +9,10 @@
     background-position: center;
     margin: auto;
 
+    .scroll-up {
+        display: none;
+    }
+
     .text-wrapper {
         position: absolute;
         top: 175px;

@@ -1,15 +1,50 @@
 .how-it-works {
     position: relative;
     width: 100vw;
-    height: 340px;
-    max-width: 1770px;
-    min-width: 1200px;
+    height: 100vh;
+    max-width: 1199px;
+    min-width: 922px;
+    min-height: 340px;
     background-color: #333333;
     margin: auto;
 
+    .scroll-up {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        width: 5vw;
+        height: 5vh;
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        z-index: 4;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        div:nth-child(1) {
+            opacity: .25;
+            padding-top: .2vh;
+        }
+
+        &:hover > div:nth-child(1) {
+            opacity: 1;
+            transition: ease-in-out 1s;
+        }
+
+        div:nth-child(2) {
+            display: none;
+        }
+    }
+
     .search-places {
         position: absolute;
-        top: 110px;
+        top: 40%;
         left: 22%;
         transform: translateX(-50%);
         display: grid;
@@ -49,7 +84,7 @@
 
     .select-places {
         position: absolute;
-        top: 110px;
+        top: 40%;
         left: 50%;
         transform: translateX(-50%);
         display: grid;
@@ -89,7 +124,7 @@
 
     .book-enjoy {
         position: absolute;
-        top: 110px;
+        top: 40%;
         right: 22%;
         transform: translateX(50%);
         display: grid;
@@ -129,7 +164,7 @@
 
     .lines {
         position: absolute;
-        top: -15px;
+        top: 20%;
         left: 50%;
         transform: translateX(-51%);
         width: 56%;
@@ -141,20 +176,27 @@
     }
 
     .scroll-down {
-        position: sticky;
-        top: 85%;
+        position: absolute;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
-        width: 10vw;
-        height: 10vh;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        width: 5vw;
+        height: 5vh;
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         justify-items: center;
         align-items: center;
         z-index: 4;
 
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
         div:nth-child(1) {
-            opacity: 0;
+            opacity: .25;
+            padding-top: .2vh;
         }
 
         &:hover > div:nth-child(1) {
@@ -162,22 +204,8 @@
             transition: ease-in-out 1s;
         }
 
-        div:nth-child(1):hover + div:nth-child(2) {
-            opacity: .5;
-            transition: ease-in-out 1s;
-        }
-
-
         div:nth-child(2) {
-            opacity: 0;
-            font-size: 14px;
-            font-family: "Josefin Sans";
-            line-height: 1;
-            text-align: center;
-            color: rgb(255, 255, 255);
-            align-self: flex-end; 
-            order: -1; 
-            cursor: default;     
+            display: none;
         }
     }
 }

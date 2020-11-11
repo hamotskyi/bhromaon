@@ -11,29 +11,29 @@ body{
     margin: 0;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 1200px) {
 
-    @import "575/header";
-    @import "575/scroll";
-    @import "575/choose";
-    @import "575/how-it-works";
-    @import "575/pool";
-    @import "575/rock";
-    @import "575/review";
-    @import "575/footer";
+@import "1200/header";
+@import "1200/scroll";
+@import "1200/choose";
+@import "1200/how-it-works";
+@import "1200/pool";
+@import "1200/rock";
+@import "1200/review";
+@import "1200/footer";
 
 }
 
-@media screen and (min-width:576px) and (max-width: 767px) {
-
-    @import "576-767/header";
-    @import "576-767/scroll";
-    @import "576-767/choose";
-    @import "576-767/how-it-works";
-    @import "576-767/pool";
-    @import "576-767/rock";
-    @import "576-767/review";
-    @import "576-767/footer";
+@media screen and (min-width:992px) and (max-width: 1199px) {
+    
+    @import "992-1199/header";
+    @import "992-1199/scroll";
+    @import "992-1199/choose";
+    @import "992-1199/how-it-works";
+    @import "992-1199/pool";
+    @import "992-1199/rock";
+    @import "992-1199/review";
+    @import "992-1199/footer"; 
     
 }
 
@@ -50,28 +50,28 @@ body{
 
 }
 
-@media screen and (min-width:992px) and (max-width: 1199px) {
+@media screen and (min-width:576px) and (max-width: 767px) {
 
-    @import "922-1199/header";
-    @import "922-1199/scroll";
-    @import "922-1199/choose";
-    @import "922-1199/how-it-works";
-    @import "922-1199/pool";
-    @import "922-1199/rock";
-    @import "922-1199/review";
-    @import "922-1199/footer";    
-
+    @import "576-767/header";
+    @import "576-767/scroll";
+    @import "576-767/choose";
+    @import "576-767/how-it-works";
+    @import "576-767/pool";
+    @import "576-767/rock";
+    @import "576-767/review";
+    @import "576-767/footer";
+    
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 575px) {
 
-@import "1200/header";
-@import "1200/scroll";
-@import "1200/choose";
-@import "1200/how-it-works";
-@import "1200/pool";
-@import "1200/rock";
-@import "1200/review";
-@import "1200/footer";
+    @import "575/header";
+    @import "575/scroll";
+    @import "575/choose";
+    @import "575/how-it-works";
+    @import "575/pool";
+    @import "575/rock";
+    @import "575/review";
+    @import "575/footer";
 
 }
