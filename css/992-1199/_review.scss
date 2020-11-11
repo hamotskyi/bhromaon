@@ -1,13 +1,49 @@
 .review {
     position: relative;
     width: 100vw;
-    height: 730px;
-    max-width: 1770px;
-    min-width: 1200px;
+    height: 100vh;
+    max-width: 1199px;
+    min-width: 922px;
+    min-height: 700px;
+    max-height: 768px;
     background-image: url(../img/review-bg.png);
+    background-size: cover;    
     background-position: center;
-    background-size: cover;
     margin: auto;
+
+    .scroll-up {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(59, 59, 59, 0.2);
+        border-radius: 25px;
+        width: 5vw;
+        height: 5vh;
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        z-index: 4;
+
+        &:hover {
+            background-color: rgba(59, 59, 59, 0.4);
+        }
+
+        div:nth-child(1) {
+            opacity: .25;
+            padding-top: .2vh;
+        }
+
+        &:hover > div:nth-child(1) {
+            opacity: 1;
+            transition: ease-in-out 1s;
+        }
+
+        div:nth-child(2) {
+            display: none;
+        }
+    }
 
     .title {
         font-size: 36px;
@@ -28,8 +64,8 @@
         bottom: 200px;
         left: 50%;
         transform: translateX(-50%);
-        width: 63%;
-        height: 284px;
+        width: 75%;
+        height: 40%;
         display: grid;
         grid-template-columns: 40% 60%;
         margin: 0;

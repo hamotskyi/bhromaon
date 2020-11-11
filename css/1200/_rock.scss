@@ -9,6 +9,10 @@
     background-position: center;
     margin: auto;
 
+    .scroll-up {
+        display: none;
+    }
+
     .wrapper {
         box-sizing: border-box;
         background-color: rgba(35, 35, 35, 0.9);

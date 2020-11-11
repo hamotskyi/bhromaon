@@ -5,7 +5,7 @@
     max-width: 1199px;
     min-width: 922px;
     min-height: 600px;
-    max-height: 685px;
+    max-height: 768px;
     background-image: url(../img/choose-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,7 +147,6 @@
 
         div:nth-child(1) {
             opacity: .25;
-            padding-top: .2vh;
         }
 
         &:hover > div:nth-child(1) {
