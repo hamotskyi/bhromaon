@@ -502,6 +502,9 @@ body {
   .how-it-works .scroll-up {
     display: none;
   }
+  .how-it-works hr {
+    display: none;
+  }
   .how-it-works .search-places {
     position: absolute;
     top: 110px;
@@ -1586,6 +1589,9 @@ body {
   .how-it-works .scroll-up div:nth-child(2) {
     display: none;
   }
+  .how-it-works hr {
+    display: none;
+  }
   .how-it-works .search-places {
     position: absolute;
     top: 40%;
@@ -2615,6 +2621,9 @@ body {
   .how-it-works .scroll-up {
     display: none;
   }
+  .how-it-works hr {
+    display: none;
+  }
   .how-it-works .search-places {
     position: absolute;
     top: 110px;
@@ -3451,6 +3460,9 @@ body {
     margin: auto;
   }
   .how-it-works .scroll-up {
+    display: none;
+  }
+  .how-it-works hr {
     display: none;
   }
   .how-it-works .search-places {
