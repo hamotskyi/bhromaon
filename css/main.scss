@@ -49,3 +49,16 @@ body{
     @import "768-991/footer"; 
     
 }
+
+@media screen and (min-width:576px) and (max-width: 767px) {
+    
+    @import "576-767/header";
+    @import "576-767/scroll";
+    @import "576-767/choose";
+    @import "576-767/how-it-works";
+    @import "576-767/pool";
+    @import "576-767/rock";
+    @import "576-767/review";
+    @import "576-767/footer"; 
+    
+}
