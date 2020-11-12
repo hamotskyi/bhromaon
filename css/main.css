@@ -2286,6 +2286,7 @@ body {
     height: 100vh;
     max-width: 991px;
     min-width: 768px;
+    min-height: 600px;
     background-image: url(../img/header-bg.png);
     background-size: cover;
     background-position: center;
@@ -2516,7 +2517,7 @@ body {
     height: 70vh;
     max-width: 991px;
     min-width: 768px;
-    min-height: 500px;
+    min-height: 600px;
     background-image: url(../img/choose-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -2553,8 +2554,6 @@ body {
     cursor: default;
   }
   .choose .text-wrapper a button {
-    position: absolute;
-    bottom: -100%;
     font-size: 14px;
     font-family: "Aleo";
     color: white;
@@ -2584,7 +2583,7 @@ body {
   }
   .choose .pic1 {
     position: absolute;
-    top: 50%;
+    bottom: 5%;
     left: 10%;
     width: 35%;
     height: 25%;
@@ -2594,7 +2593,7 @@ body {
   }
   .choose .pic2 {
     position: absolute;
-    top: 50%;
+    bottom: 5%;
     right: 10%;
     width: 35%;
     height: 25%;
@@ -2611,6 +2610,7 @@ body {
     height: 30vh;
     max-width: 991px;
     min-width: 768px;
+    min-height: 300px;
     background-color: #333333;
     margin: auto;
   }
@@ -2948,7 +2948,8 @@ body {
     min-height: 700px;
     background-image: url(../img/review-bg.png);
     background-size: cover;
-    background-position: center;
+    background-position-x: right;
+    background-position-y: top;
     margin: auto;
   }
   .review .scroll-up {
@@ -2978,8 +2979,8 @@ body {
     height: 60%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 40% 60%;
-        grid-template-rows: 40% 60%;
+    -ms-grid-rows: 35% 65%;
+        grid-template-rows: 35% 65%;
     margin: 0;
   }
   .review .grid .grid-img {

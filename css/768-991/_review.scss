@@ -7,7 +7,8 @@
     min-height: 700px;
     background-image: url(../img/review-bg.png);
     background-size: cover;    
-    background-position: center;
+    background-position-x: right;
+    background-position-y: top;;
     margin: auto;
 
     .scroll-up {
@@ -36,7 +37,7 @@
         width: 50%;
         height: 60%;
         display: grid;
-        grid-template-rows: 40% 60%;
+        grid-template-rows: 35% 65%;
         margin: 0;
 
         .grid-img {
