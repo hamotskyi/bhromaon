@@ -1,10 +1,9 @@
 .footer {
     position: relative;
     width: 100vw;
-    height: 10vh;
+    height: 120px;
     min-height: 99px;
-    max-width: 767px;
-    min-width: 576px;
+    max-width: 575px;
     background-color: #232323;
     margin: auto;
 
@@ -16,9 +15,9 @@
         text-transform: uppercase;
         text-align: center;
         position: absolute;
-        top: 55%;
-        right: 52%;        
-        transform: translateY(-50%);
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
         text-decoration: none;
         margin: 0;                
         transition: ease-in-out .3s;
@@ -43,9 +42,9 @@
 
     ul {
         position: absolute;
-        top: 50%;
-        left: 52%;
-        transform: translateY(-50%);
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
         list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -107,5 +106,6 @@
                 }
             }
         }
-    }    
+    }
+      
 }
