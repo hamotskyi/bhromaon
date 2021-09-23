@@ -1,0 +1,94 @@
+.rock {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 991px;
+    min-width: 768px;
+    min-height: 700px;
+    background-image: url(../img/rock-bg.png);
+    background-size: cover;    
+    background-position: center;
+    margin: auto;
+
+    .scroll-up {
+        display: none;
+    }
+
+    .wrapper {
+        box-sizing: border-box;
+        background-color: rgba(35, 35, 35, 0.9);
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        max-height: 370px;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 20px;
+
+        .title {
+            font-size: 20px;
+            font-family: "Josefin Sans";
+            color: rgb(232, 232, 232);
+            line-height: 1.3;
+            text-align: center; 
+            cursor: default;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            font-family: "Josefin Sans";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 1.3;
+            text-align: center;
+            margin-bottom: 5%; 
+            cursor: default;
+        }
+
+        .text {
+            font-size: 16px;
+            font-family: "Josefin Sans";
+            color: rgb(232, 232, 232);
+            line-height: 1.625;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 5%; 
+            cursor: default;
+        }
+
+        a {
+            button {
+                font-size: 16px;
+                font-family: "Aleo";
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                text-align: center;
+                background-color: rgb(84, 116, 253);
+                width: 225px;
+                height: 60px;
+                border: none;
+                cursor: pointer;                
+                transition: ease-in-out .7s;
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+
+                &:focus,
+                &:hover {
+                    transform: translateX(-50%) scale(1.15);
+                    background-color: darken(#5474fd, 20);
+                }
+
+                &:active {
+                    transform: translateX(-50%) scale(1.05);
+                    background-color: darken(#5474fd, 10);
+                }
+            }
+        }
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}

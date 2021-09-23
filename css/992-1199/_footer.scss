@@ -1,0 +1,111 @@
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    max-width: 1199px;
+    min-width: 922px;
+    background-color: #232323;
+    margin: auto;
+
+    .title {
+        font-size: 24px;
+        font-family: "Josefin Sans";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        margin: 0;                
+        transition: ease-in-out .3s;
+
+
+        &:focus,
+        &:hover {
+            
+            transform: translateX(-50%) scale(1.2);
+            color: #839aff;
+        }
+
+        &:active {
+            transform: translateX(-50%) scale(1.05);
+        }
+
+      }
+      
+    .subtitle {
+    display: none;
+    }
+
+    ul {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 12px;
+        justify-items: center;
+        align-items: center;
+        width: 128px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+
+        li { 
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+
+            &:focus-within,
+            &:hover {
+                a {
+                    svg {
+                        transform: scale(1.7);
+                        path {
+                            fill:#5474fd;
+                        }
+                    }
+                }
+            }
+
+            &:active {
+                a {
+                    svg {
+                        transform: scale(1.2);
+                        path {
+                            fill:#5474fd;
+                        }
+                    }
+                }
+            }
+
+            a {
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+
+
+                svg {
+                    width: 16px;
+                    height: 16px;
+                    cursor: pointer;
+                    transition: ease-in-out .4s;
+
+
+                    path {
+                        width: 16px;
+                        height: 16px;
+                        fill: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+      
+}
